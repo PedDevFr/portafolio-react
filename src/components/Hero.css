@@ -1,0 +1,204 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #000000;
+}
+
+.hero__darkveil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+  box-sizing: border-box;
+  color: white;
+}
+
+.hero__left {
+  flex: 0 1 auto;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.hero__right {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.hero__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  animation: fade-in 1s ease-in;
+}
+
+.hero__subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  animation: fade-in 1.5s ease-in;
+}
+
+.hero__greeting {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(156, 163, 175);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0;
+}
+
+.hero__un {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  color: rgb(156, 163, 175);
+  margin: 0.5rem 0;
+}
+
+.hero__role {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+  margin-top: 0.5rem;
+  border-bottom: 2px solid #2dd4bf80;
+  display: inline-block;
+  width: fit-content;
+}
+
+.hero__social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hero__description {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29px;
+  color: rgb(209, 213, 219);
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+.hero__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero__social-link:hover {
+  color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero__icon {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero__left {
+    text-align: center;
+  }
+
+  .hero__left {
+    padding-right: 0;
+  }
+
+  .hero__right {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  
+  .hero__subtitle {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .hero__name {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .hero__un {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero__role {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
