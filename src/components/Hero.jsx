@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="hero__role">Desarrollador de software</p>
           <div className="hero__social">
             <a 
-              href="https://github.com/pedroinfante" 
+              href="https://github.com/PedDevFr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hero__social-link"
@@ -29,7 +29,7 @@ const Hero = () => {
               </svg>
             </a>
             <a 
-              href="https://linkedin.com/in/pedroinfante" 
+              href="https://www.linkedin.com/in/pedro-infante-poma/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hero__social-link"
