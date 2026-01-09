@@ -313,6 +313,23 @@
     gap: 2rem;
   }
 
+  .contact__info-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .contact__info-content {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .contact__info-value {
+    font-size: 14px;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+  }
+
   .contact__form-title {
     font-size: 16px;
   }

@@ -163,18 +163,25 @@
   .hero__content {
     flex-direction: column;
     gap: 2rem;
+    padding-top: 6rem;
   }
 
   .hero__left {
     text-align: center;
-  }
-
-  .hero__left {
     padding-right: 0;
+    align-self: center;
+    width: 100%;
   }
 
   .hero__right {
     text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+  }
+
+  .hero__social {
+    justify-content: center;
   }
 
   .hero__title {
