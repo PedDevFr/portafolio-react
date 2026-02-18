@@ -22,24 +22,6 @@ const Projects = () => {
       link: null,
       github: 'https://github.com/PedDevFr/InectApi'
     },
-    {
-      id: 3,
-      title: 'App Móvil React Native',
-      description: 'Aplicación móvil multiplataforma para delivery de comida. Características: geolocalización, notificaciones push, y pasarela de pagos.',
-      technologies: ['React Native', 'Firebase', 'Google Maps API'],
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
-      link: '#',
-      github: '#'
-    },
-    {
-      id: 4,
-      title: 'Dashboard Analytics',
-      description: 'Panel de control con visualización de datos en tiempo real. Gráficos interactivos y exportación de reportes en múltiples formatos.',
-      technologies: ['React', 'Chart.js', 'Node.js', 'PostgreSQL'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      link: '#',
-      github: '#'
-    }
   ]
 
   return (
